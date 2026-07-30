@@ -52,7 +52,7 @@ export default function RedesignedFooter() {
           <div className="md:col-span-4 space-y-3">
             <div className="flex flex-col">
               <h3 className="text-2xl font-display font-extrabold tracking-[0.15em] text-[var(--text-main)] uppercase">
-                SUMEET
+                GENERAL NEEV GUITARS
               </h3>
               <span className="text-xs font-bold tracking-[0.15em] text-[var(--gold)]">
                 Guitar Restoration • Kathmandu • Est. 2006
@@ -120,7 +120,7 @@ export default function RedesignedFooter() {
 
         {/* Bottom Copyright */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[var(--text-muted)]">
-          <p>© {new Date().getFullYear()} SuMeeT Guitar Restoration. Kathmandu, Nepal.</p>
+          <p>© {new Date().getFullYear()} General Neev Guitars. Kathmandu, Nepal.</p>
           <p className="flex items-center gap-1">
             Handcrafted with <Heart className="w-3 h-3 text-red-500 fill-red-500 inline" /> in Kathmandu
           </p>

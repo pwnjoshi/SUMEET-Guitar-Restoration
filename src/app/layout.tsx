@@ -16,7 +16,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "SuMeeT Guitar Restoration | Master Lutherie Kathmandu",
+  title: "General Neev Guitars | Master Lutherie Kathmandu",
   description: "Acoustic & Electric Guitar Restoration, Structural Repair, and Precision Setup in Kathmandu, Nepal since 2006.",
 };
 

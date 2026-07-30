@@ -46,12 +46,12 @@ export default function LuxuryHeader() {
         >
           {/* Brandmark */}
           <Link href="/" className="group flex flex-col justify-center">
-            <span className="text-lg sm:text-2xl font-display font-extrabold tracking-[0.18em] text-[var(--text-main)] group-hover:text-[var(--gold)] transition-colors uppercase leading-none">
-              SUMEET
-            </span>
-            <span className="text-[9px] sm:text-[10px] uppercase font-bold tracking-[0.2em] text-[var(--gold)] mt-0.5 sm:mt-1">
-              Guitar Restoration
-            </span>
+            <span className="text-xl sm:text-2xl tracking-[0.2em] font-serif text-[var(--text-main)] group-hover:text-[var(--gold)] transition-colors font-bold">
+            GENERAL NEEV
+          </span>
+          <span className="text-[9px] uppercase tracking-[0.35em] text-[var(--gold-muted)] font-mono-custom font-semibold">
+            Guitars & Lutherie • Kathmandu • Est. 2006
+          </span>
           </Link>
 
           {/* Nav Links (Desktop) */}
