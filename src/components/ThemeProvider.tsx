@@ -39,7 +39,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       {/* Floating Theme Switcher Button */}
       <button
         onClick={toggleTheme}
-        className="fixed bottom-6 right-6 z-50 px-4 py-3 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 text-white border border-amber-300/40 shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center gap-2 font-mono-custom text-xs font-bold group"
+        className="fixed bottom-6 right-6 z-50 px-4 py-3 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 text-white border border-amber-300/40 shadow-2xl transition-colors flex items-center gap-2 font-mono-custom text-xs font-bold group"
         title={`Switch to ${theme === "dark" ? "Light" : "Dark"} Mode`}
       >
         {theme === "dark" ? (

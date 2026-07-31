@@ -63,7 +63,7 @@ export default function Home() {
               <div className="pt-3 flex flex-wrap items-center gap-4 text-xs font-semibold">
                 <Link
                   href="#booking"
-                  className="px-8 py-4 rounded-full bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-500 text-white font-bold text-xs hover:scale-[1.02] active:scale-95 shadow-xl shadow-amber-500/20 border border-amber-400/30 transition-all inline-block"
+                  className="px-8 py-4 rounded-full bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-500 text-white font-bold text-xs shadow-xl shadow-amber-500/20 border border-amber-400/30 transition-colors inline-block"
                 >
                   Book Bench Consultation
                 </Link>

@@ -175,10 +175,10 @@ export default function LuxuryBooking() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full py-3.5 sm:py-4 rounded-2xl bg-zinc-950 text-white dark:bg-white dark:text-zinc-950 font-display font-bold text-xs uppercase tracking-wider hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 shadow-2xl group"
+                className="w-full py-3.5 sm:py-4 rounded-2xl bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-500 text-white font-display font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-xl shadow-amber-500/20 border border-amber-400/30"
               >
                 <span>Confirm Appointment Reservation</span>
-                <ArrowRight className="w-4 h-4 text-[var(--gold)] group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 text-white" />
               </button>
 
             </form>
