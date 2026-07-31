@@ -29,7 +29,7 @@ export default function AboutPage() {
           <div className="relative aspect-[4/3] rounded-3xl overflow-hidden apple-glass-card border border-[var(--border)] shadow-2xl group">
             <Image
               src="/images/lutherie_cinematic.jpg"
-              alt="General Neev Guitars Workshop Kathmandu"
+              alt="Neev Guitars Workshop Kathmandu"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700"
             />
@@ -44,7 +44,7 @@ export default function AboutPage() {
               Craftsmanship & Uncompromising Passion
             </h2>
             <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed font-medium">
-              Established in 2006 in Kathmandu, General Neev Guitars focuses sheerly on providing uncompromising quality guitar tech service to local and touring musicians across Nepal and abroad.
+              Established in 2006 in Kathmandu, Neev Guitars focuses sheerly on providing uncompromising quality guitar tech service to local and touring musicians across Nepal and abroad.
             </p>
             <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed font-medium">
               Whether it is bonding a shattered headstock joint, recrowning worn frets, or rewiring vintage pickup looms, every instrument is treated as a cherished piece of acoustic art.

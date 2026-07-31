@@ -47,7 +47,7 @@ export default function LuxuryHeader() {
           {/* Brandmark */}
           <Link href="/" className="group flex flex-col justify-center">
             <span className="text-xl sm:text-2xl tracking-[0.2em] font-serif text-[var(--text-main)] group-hover:text-[var(--gold)] transition-colors font-bold">
-            GENERAL NEEV
+            NEEV GUITARS
           </span>
           <span className="text-[9px] uppercase tracking-[0.35em] text-[var(--gold-muted)] font-mono-custom font-semibold">
             Guitars & Lutherie • Kathmandu • Est. 2006
