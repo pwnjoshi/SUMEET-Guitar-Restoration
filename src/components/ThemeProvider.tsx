@@ -36,21 +36,21 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     <div className={theme === "light" ? "light-mode" : "dark-mode"}>
       {children}
       
-      {/* Floating Apple-style Segmented Theme Pill Button */}
+      {/* Floating Theme Switcher Button */}
       <button
         onClick={toggleTheme}
-        className="fixed bottom-20 right-4 sm:bottom-6 sm:right-6 z-40 px-4 py-2.5 rounded-full apple-glass text-[var(--gold)] border border-[var(--border)] shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center gap-2 group backdrop-blur-2xl"
+        className="fixed bottom-6 right-6 z-50 px-4 py-3 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 text-white border border-amber-300/40 shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center gap-2 font-mono-custom text-xs font-bold group"
         title={`Switch to ${theme === "dark" ? "Light" : "Dark"} Mode`}
       >
         {theme === "dark" ? (
           <>
-            <Sun className="w-4 h-4 text-amber-400 group-hover:rotate-45 transition-transform" />
-            <span className="text-xs font-bold text-[var(--text-main)]">Light</span>
+            <Sun className="w-4 h-4 text-amber-200 group-hover:rotate-45 transition-transform" />
+            <span>Light</span>
           </>
         ) : (
           <>
-            <Moon className="w-4 h-4 text-amber-600 group-hover:-rotate-12 transition-transform" />
-            <span className="text-xs font-bold text-[var(--text-main)]">Dark</span>
+            <Moon className="w-4 h-4 text-amber-100 group-hover:-rotate-12 transition-transform" />
+            <span>Dark</span>
           </>
         )}
       </button>

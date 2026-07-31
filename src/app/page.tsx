@@ -63,14 +63,14 @@ export default function Home() {
               <div className="pt-3 flex flex-wrap items-center gap-4 text-xs font-semibold">
                 <Link
                   href="#booking"
-                  className="px-8 py-4 rounded-full bg-zinc-950 text-white dark:bg-white dark:text-zinc-950 font-bold text-xs hover:scale-[1.02] active:scale-95 shadow-2xl transition-all inline-block"
+                  className="px-8 py-4 rounded-full bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-500 text-white font-bold text-xs hover:scale-[1.02] active:scale-95 shadow-xl shadow-amber-500/20 border border-amber-400/30 transition-all inline-block"
                 >
                   Book Bench Consultation
                 </Link>
 
                 <Link
                   href="/tuner"
-                  className="px-7 py-4 rounded-full apple-glass text-[var(--text-main)] hover:border-[var(--gold)] hover:text-[var(--gold)] transition-all font-semibold flex items-center gap-2"
+                  className="px-7 py-4 rounded-full bg-[var(--bg-card)] text-[var(--text-main)] border border-[var(--gold)]/40 hover:border-[var(--gold)] hover:bg-[var(--gold)]/10 transition-all font-semibold flex items-center gap-2 shadow-sm"
                 >
                   <Mic className="w-4 h-4 text-[var(--gold)]" /> Launch Live Mic Tuner
                 </Link>

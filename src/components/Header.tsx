@@ -80,7 +80,7 @@ export default function LuxuryHeader() {
           <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             <Link
               href="/contact#booking"
-              className="hidden sm:inline-flex px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-zinc-950 text-white dark:bg-white dark:text-zinc-950 font-bold text-xs hover:scale-[1.02] active:scale-95 transition-all shadow-lg whitespace-nowrap"
+              className="hidden sm:inline-flex px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 text-white font-bold text-xs hover:scale-[1.02] active:scale-95 transition-all shadow-md whitespace-nowrap border border-amber-400/30"
             >
               Book Consultation
             </Link>
