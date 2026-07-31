@@ -45,13 +45,13 @@ export default function LuxuryHeader() {
           }`}
         >
           {/* Brandmark */}
-          <Link href="/" className="group flex flex-col justify-center">
-            <span className="text-xl sm:text-2xl tracking-[0.2em] font-serif text-[var(--text-main)] group-hover:text-[var(--gold)] transition-colors font-bold">
-            NEEV GUITARS
-          </span>
-          <span className="text-[9px] uppercase tracking-[0.35em] text-[var(--gold-muted)] font-mono-custom font-semibold">
-            Guitars & Lutherie • Kathmandu • Est. 2006
-          </span>
+          <Link href="/" className="group flex flex-col justify-center min-w-0 pr-2">
+            <span className="text-sm sm:text-2xl tracking-[0.12em] sm:tracking-[0.2em] font-serif text-[var(--text-main)] group-hover:text-[var(--gold)] transition-colors font-bold whitespace-nowrap leading-tight">
+              NEEV GUITARS
+            </span>
+            <span className="text-[7.5px] sm:text-[9px] uppercase tracking-[0.15em] sm:tracking-[0.35em] text-[var(--gold-muted)] font-mono-custom font-semibold truncate">
+              Guitars & Lutherie • Kathmandu
+            </span>
           </Link>
 
           {/* Nav Links (Desktop) */}
@@ -77,10 +77,10 @@ export default function LuxuryHeader() {
           </nav>
 
           {/* Action Button & Mobile Trigger */}
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             <Link
               href="/contact#booking"
-              className="px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-zinc-950 text-white dark:bg-white dark:text-zinc-950 font-bold text-xs hover:scale-[1.02] active:scale-95 transition-all shadow-lg whitespace-nowrap"
+              className="hidden sm:inline-flex px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-zinc-950 text-white dark:bg-white dark:text-zinc-950 font-bold text-xs hover:scale-[1.02] active:scale-95 transition-all shadow-lg whitespace-nowrap"
             >
               Book Consultation
             </Link>
