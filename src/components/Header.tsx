@@ -45,15 +45,15 @@ export default function LuxuryHeader() {
           }`}
         >
           {/* Brandmark Emblem Logo */}
-          <Link href="/" className="group flex items-center gap-2.5 min-w-0 pr-2">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 flex items-center justify-center text-white shadow-md shadow-amber-500/20 border border-amber-300/40 shrink-0">
-              <Music className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+          <Link href="/" className="group flex items-center gap-2 shrink-0">
+            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 flex items-center justify-center text-white shadow-sm border border-amber-300/40 shrink-0">
+              <Music className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
             </div>
-            <div className="flex flex-col justify-center min-w-0">
-              <span className="text-sm sm:text-lg tracking-[0.14em] font-display font-extrabold text-[var(--text-main)] group-hover:text-[var(--gold)] transition-colors leading-none uppercase">
-                SUMEET <span className="text-[var(--gold)]">GUITAR RESTORATION</span>
+            <div className="flex flex-col justify-center">
+              <span className="text-xs sm:text-sm font-display font-extrabold text-[var(--text-main)] group-hover:text-[var(--gold)] transition-colors leading-none tracking-wider uppercase">
+                SUMEET <span className="text-[var(--gold)]">GUITARS</span>
               </span>
-              <span className="text-[8px] sm:text-[9.5px] font-mono-custom font-semibold text-[var(--gold-muted)] uppercase tracking-[0.15em] sm:tracking-[0.25em] truncate mt-0.5">
+              <span className="text-[7px] sm:text-[8px] font-mono-custom font-semibold text-[var(--gold-muted)] uppercase tracking-wider leading-none mt-0.5">
                 Lutherie • Kathmandu
               </span>
             </div>
