@@ -62,7 +62,7 @@ export default function LuxuryBooking() {
               </div>
               <h3 className="text-xl sm:text-2xl font-display font-bold text-[var(--text-main)]">Consultation Reserved!</h3>
               <p className="text-xs text-[var(--text-muted)] max-w-md mx-auto leading-relaxed">
-                Thank you <strong className="text-[var(--text-main)]">{name}</strong>. Neev Guitars has logged your appointment request for <strong className="text-[var(--gold)]">{instrument}</strong>. We will call you shortly on <strong className="text-[var(--text-main)]">{phone}</strong>.
+                Thank you <strong className="text-[var(--text-main)]">{name}</strong>. SuMeeT Guitar Restoration has logged your appointment request for <strong className="text-[var(--gold)]">{instrument}</strong>. We will call you shortly on <strong className="text-[var(--text-main)]">{phone}</strong>.
               </p>
               <button
                 onClick={() => {

@@ -51,7 +51,7 @@ export default function LuxuryHeader() {
             </div>
             <div className="flex flex-col justify-center min-w-0">
               <span className="text-sm sm:text-lg tracking-[0.14em] font-display font-extrabold text-[var(--text-main)] group-hover:text-[var(--gold)] transition-colors leading-none uppercase">
-                NEEV <span className="text-[var(--gold)]">GUITARS</span>
+                SUMEET <span className="text-[var(--gold)]">GUITAR RESTORATION</span>
               </span>
               <span className="text-[8px] sm:text-[9.5px] font-mono-custom font-semibold text-[var(--gold-muted)] uppercase tracking-[0.15em] sm:tracking-[0.25em] truncate mt-0.5">
                 Lutherie • Kathmandu
