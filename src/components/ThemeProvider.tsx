@@ -18,16 +18,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<"dark" | "light">("light");
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("sumeet-theme") as "dark" | "light" | null;
-    const initialTheme = savedTheme || "light";
-    setTheme(initialTheme);
-    if (initialTheme === "dark") {
-      document.documentElement.classList.add("dark-mode");
-      document.documentElement.classList.remove("light-mode");
-    } else {
-      document.documentElement.classList.add("light-mode");
-      document.documentElement.classList.remove("dark-mode");
-    }
+    document.documentElement.classList.add("light-mode");
+    document.documentElement.classList.remove("dark-mode");
+    localStorage.removeItem("sumeet-theme");
   }, []);
 
   const toggleTheme = () => {
