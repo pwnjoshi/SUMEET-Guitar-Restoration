@@ -5,10 +5,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Home, Mic, Wrench, Image as ImageIcon, Info, Phone, Menu, X, Sparkles, Music } from "lucide-react";
 
+import { useTheme } from "@/components/ThemeProvider";
+import { Sun, Moon } from "lucide-react";
+
 export default function LuxuryHeader() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -83,6 +87,25 @@ export default function LuxuryHeader() {
 
           {/* Action Button & Mobile Trigger */}
           <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
+            {/* Theme Toggle Button */}
+            <button
+              onClick={toggleTheme}
+              className="px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full bg-[var(--bg-pill)] text-[var(--text-main)] border border-[var(--border)] hover:bg-[var(--bg-card)] transition-colors flex items-center gap-1.5 text-xs font-semibold"
+              title={`Switch to ${theme === "dark" ? "Light" : "Dark"} Mode`}
+            >
+              {theme === "dark" ? (
+                <>
+                  <Sun className="w-3.5 h-3.5 text-amber-400" />
+                  <span className="hidden sm:inline">Light</span>
+                </>
+              ) : (
+                <>
+                  <Moon className="w-3.5 h-3.5 text-amber-600" />
+                  <span className="hidden sm:inline">Dark</span>
+                </>
+              )}
+            </button>
+
             <Link
               href="/contact#booking"
               className="px-3.5 sm:px-5 py-1.5 sm:py-2.5 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 text-white font-bold text-[11px] sm:text-xs shadow-md whitespace-nowrap border border-amber-400/30 transition-colors"
