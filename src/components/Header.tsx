@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Mic, Wrench, Image as ImageIcon, Info, Phone, Menu, X, Sparkles } from "lucide-react";
+import { Home, Mic, Wrench, Image as ImageIcon, Info, Phone, Menu, X, Sparkles, Music } from "lucide-react";
 
 export default function LuxuryHeader() {
   const [scrolled, setScrolled] = useState(false);
