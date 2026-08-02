@@ -44,14 +44,19 @@ export default function LuxuryHeader() {
               : "bg-[var(--bg-glass)] backdrop-blur-xl border border-[var(--border)] shadow-lg"
           }`}
         >
-          {/* Brandmark */}
-          <Link href="/" className="group flex flex-col justify-center min-w-0 pr-2">
-            <span className="text-sm sm:text-2xl tracking-[0.12em] sm:tracking-[0.2em] font-serif text-[var(--text-main)] group-hover:text-[var(--gold)] transition-colors font-bold whitespace-nowrap leading-tight">
-              NEEV GUITARS
-            </span>
-            <span className="text-[7.5px] sm:text-[9px] uppercase tracking-[0.15em] sm:tracking-[0.35em] text-[var(--gold-muted)] font-mono-custom font-semibold truncate">
-              Guitars & Lutherie • Kathmandu
-            </span>
+          {/* Brandmark Emblem Logo */}
+          <Link href="/" className="group flex items-center gap-2.5 min-w-0 pr-2">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 flex items-center justify-center text-white shadow-md shadow-amber-500/20 border border-amber-300/40 shrink-0">
+              <Music className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+            </div>
+            <div className="flex flex-col justify-center min-w-0">
+              <span className="text-sm sm:text-lg tracking-[0.14em] font-display font-extrabold text-[var(--text-main)] group-hover:text-[var(--gold)] transition-colors leading-none uppercase">
+                NEEV <span className="text-[var(--gold)]">GUITARS</span>
+              </span>
+              <span className="text-[8px] sm:text-[9.5px] font-mono-custom font-semibold text-[var(--gold-muted)] uppercase tracking-[0.15em] sm:tracking-[0.25em] truncate mt-0.5">
+                Lutherie • Kathmandu
+              </span>
+            </div>
           </Link>
 
           {/* Nav Links (Desktop) */}
@@ -80,9 +85,9 @@ export default function LuxuryHeader() {
           <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             <Link
               href="/contact#booking"
-              className="hidden sm:inline-flex px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 text-white font-bold text-xs shadow-md whitespace-nowrap border border-amber-400/30 transition-colors"
+              className="px-3.5 sm:px-5 py-1.5 sm:py-2.5 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 text-white font-bold text-[11px] sm:text-xs shadow-md whitespace-nowrap border border-amber-400/30 transition-colors"
             >
-              Book Consultation
+              Book Repair
             </Link>
 
             <button

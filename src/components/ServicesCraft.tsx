@@ -59,22 +59,15 @@ export default function RedesignedServices() {
             const Icon = item.icon;
             return (
               <div
-                key={item.code}
+                key={item.title}
                 className="apple-glass-card p-8 rounded-3xl border border-[var(--border)] group relative overflow-hidden flex flex-col justify-between"
               >
-                {/* Accent Watermark */}
-                <span className="absolute -right-4 -bottom-6 text-8xl font-display font-extrabold text-[var(--gold)]/5 group-hover:text-[var(--gold)]/10 transition-colors pointer-events-none select-none">
-                  {item.code}
-                </span>
 
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-2xl bg-[var(--gold)]/10 text-[var(--gold)] border border-[var(--gold)]/20 flex items-center justify-center group-hover:scale-110 transition-transform shadow-sm">
+                    <div className="w-12 h-12 rounded-2xl bg-[var(--gold)]/10 text-[var(--gold)] border border-[var(--gold)]/20 flex items-center justify-center shadow-sm">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="text-xs font-bold px-3 py-1 rounded-full bg-[var(--bg-pill)] text-[var(--text-muted)] border border-[var(--border)]">
-                      Code [{item.code}]
-                    </span>
                   </div>
 
                   <h3 className="text-xl font-display font-bold text-[var(--text-main)] group-hover:text-[var(--gold)] transition-colors">

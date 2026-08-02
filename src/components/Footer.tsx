@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { MapPin, Phone, Clock, MessageCircle, Heart, ShieldCheck, Wrench, Award } from "lucide-react";
+import { MapPin, Phone, Clock, MessageCircle, Heart, ShieldCheck, Wrench, Award, Music } from "lucide-react";
 
 export default function RedesignedFooter() {
   return (
@@ -50,13 +50,18 @@ export default function RedesignedFooter() {
           
           {/* Brand Info */}
           <div className="md:col-span-4 space-y-3">
-            <div className="flex flex-col">
-              <h3 className="text-2xl font-display font-extrabold tracking-[0.15em] text-[var(--text-main)] uppercase">
-                NEEV GUITARS
-              </h3>
-              <span className="text-xs font-bold tracking-[0.15em] text-[var(--gold)]">
-                Guitar Restoration • Kathmandu • Est. 2006
-              </span>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 flex items-center justify-center text-white shadow-md shadow-amber-500/20 border border-amber-300/40 shrink-0">
+                <Music className="w-5 h-5 text-white" />
+              </div>
+              <div className="flex flex-col">
+                <h3 className="text-xl font-display font-extrabold tracking-[0.15em] text-[var(--text-main)] uppercase">
+                  NEEV <span className="text-[var(--gold)]">GUITARS</span>
+                </h3>
+                <span className="text-[10px] font-bold tracking-[0.15em] text-[var(--gold-muted)] uppercase">
+                  Guitars & Lutherie • Kathmandu • Est. 2006
+                </span>
+              </div>
             </div>
             <p className="text-xs text-[var(--text-muted)] leading-relaxed">
               Kathmandu's premier acoustic and electric guitar restoration bench. Specialized in neck structural repairs, lacquering, refretting, and precision acoustic calibration since 2006.
