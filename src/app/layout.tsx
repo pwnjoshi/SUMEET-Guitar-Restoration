@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   description: "Acoustic & Electric Guitar Restoration, Structural Repair, and Precision Setup in Kathmandu, Nepal since 2006.",
 };
 
+import Preloader from "@/components/Preloader";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,6 +34,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-sans bg-[var(--bg-main)] text-[var(--text-main)] transition-colors duration-300 antialiased" suppressHydrationWarning>
         <ThemeProvider>
+          <Preloader />
           {children}
         </ThemeProvider>
       </body>
